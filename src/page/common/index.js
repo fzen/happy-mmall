@@ -1,1 +1,2 @@
-$('h1').text('hahahahahhahahahahahcfdf')
+require('../../../node_modules/font-awesome/css/font-awesome.min.css')
+require('./layout.css')

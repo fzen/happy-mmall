@@ -147,7 +147,7 @@ var config = {
 
     ],
     devServer: {
-        port: 8088,
+        port: 8080,
         inline: true,
         // hot: true,
         // proxy: {
