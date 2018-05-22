@@ -51,6 +51,7 @@ var _mm = {
     successTips: function(msg){
         alert(msg||'操作成功！')
     },
+    // 错误提示
     errorTips: function(msg){
         alert(msg||'哪里不对了吧')
     },

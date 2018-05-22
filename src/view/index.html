@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <%= require('./head-common.string')%>
+    <title> <%= htmlWebpackPlugin.options.title%> --Mmall电子商务网站</title>
+    <%= require('html-loader!./layout/html-head.html')%>
 </head>
 <body>
-
-    <i class="fa fa-user"></i>
-
-    <%= require('./footer-common.string')%> 
+    <%= require('html-loader!./layout/nav.html')%>    
+    <%= require('html-loader!./layout/header.html')%>
+    <div class="page-wrap w">
+        <%= require('html-loader!./layout/nav-side.html')%>  
+        <div class="content with-nav"></div>          
+    </div>
+    <%= require('html-loader!./layout/footer-common.html')%> 
 </body>
 </html>

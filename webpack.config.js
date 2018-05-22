@@ -141,8 +141,8 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
-        new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('about', '关于MMall')),
+        new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
         // new webpack.HotModuleReplacementPlugin()
 
     ],

@@ -1,0 +1,15 @@
+.footer {
+    padding-bottom: 10px;
+}
+.footer .links {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link {
+    margin: 0 8px;
+}
+.footer .copyRight {
+    text-align: center;
+    color: #222;
+}
