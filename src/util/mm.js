@@ -59,7 +59,7 @@ var _mm = {
     validate: function(value,type){
         var value = $.trim(value)
         // 非空验证
-        if(type === 'require'){
+        if(type === 'required'){
             return !!value
         }
         // 手机号验证
@@ -73,7 +73,7 @@ var _mm = {
     },
     // 跳转到登录页面，并将当前页面url作为查询参数传递，以便登录成功后跳转回当前页面
     doLogin: function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href) 
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href) 
     },
     // 跳转到主页
     goHome: function(){

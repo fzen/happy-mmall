@@ -13,15 +13,15 @@ var nav = {
     },
     bindEvent: function(){
         // 登录点击事件
-        $('.login').on('click',function(){
+        $('.js-login').on('click',function(){
             _mm.doLogin()
         })
         // 注册点击事件
-        $('.register').on('click',function(){
+        $('.js-register').on('click',function(){
             window.location.href = './register.html'
         })
         // 退出登录点击事件
-        $('.logout').on('click',function(){
+        $('.js-logout').on('click',function(){
             _user.logout(
                 function(res){
                     window.location.reload()
@@ -50,7 +50,7 @@ var nav = {
         _cart.getCartCount(
             // 获取成功
             function(res){
-                $('.nav .cartCount').text(res)
+                $('.nav .cart-count').text(res)
             },
             // 获取失败
             function(errMsg){
