@@ -49,6 +49,7 @@ var page = {
         })      
     },
     submit: function(){
+        // 获取表单内容 
         var formData = {
             username: $.trim($('#username').val()),
             password: $.trim($('#password').val()),
@@ -56,9 +57,10 @@ var page = {
             phone: $.trim($('#phone').val()),
             email: $.trim($('#email').val()),
             question: $.trim($('#question').val()),
-            anser: $.trim($('#anser').val())
+            answer: $.trim($('#answer').val())
         }
         var formValidateResult = this.formValidate(formData) 
+
         if(formValidateResult.status){
             _user.register(formData,
                 function(res){
@@ -73,6 +75,7 @@ var page = {
         }
 
     },
+    // 表单验证
     formValidate: function(formData){
         var result = {
             status: false,
@@ -106,7 +109,7 @@ var page = {
             result.msg = '密码提示问题不能为空'
             return result
         }
-        if(!_mm.validate(formData.anser,'required')){
+        if(!_mm.validate(formData.answer,'required')){
             result.msg = '密码提示答案不能为空！'
             return result
         }

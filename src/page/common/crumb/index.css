@@ -1,0 +1,9 @@
+.crumb {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    border-top: 2px solid #c60023;
+    margin-bottom: 15px;
+}

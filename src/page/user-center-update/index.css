@@ -1,0 +1,30 @@
+.content.with-nav {
+    float: left;
+    width: 930px;
+    background-color: #fff;
+    padding: 10px;
+}
+.content .panel h2 {
+    color: #555;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+.content .panel-item {
+    font-size: 14px;    
+    margin: 10px 20px;
+}
+.content .panel-item .label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.content .panel .text {
+    padding: 5px;
+}
+.content .panel .btn-submit {
+    margin: 10px 20px; 
+    padding: 0 5px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}

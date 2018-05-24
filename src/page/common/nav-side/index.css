@@ -6,8 +6,10 @@
     line-height: 25px;
 }
 .nav-side .nav-item .link {
-    color: #888;
+    padding-bottom: 2px;
 }
 .nav-side .nav-item.active .link {
     color: #c60023;
+    font-weight: bold;
+    border-bottom: 1px solid#c20067
 }

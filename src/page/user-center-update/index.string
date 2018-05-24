@@ -1,0 +1,25 @@
+<div class="panel-item">
+        <span class="label">用户名</span>
+        <span>>></span>
+        <span class="text">{{username}}</span>
+    </div>
+    <div class="panel-item">
+        <span class="label">电话</span>
+        <span>>></span>
+        <input class="text" id="phone" value="{{phone}}"></input>
+    </div>
+    <div class="panel-item">
+        <span class="label">邮箱</span>
+        <span>>></span>
+        <input class="text" id="email" value="{{email}}"></input>
+    </div>
+    <div class="panel-item">
+        <span class="label">密码提示问题</span>
+        <span>>></span>
+        <input class="text" id="question" value="{{question}}"></input>
+    </div>
+    <div class="panel-item">
+        <span class="label">密码提示问题答案</span>
+        <span>>></span>
+        <input class="text" id="answer" value="{{answer}}"></input>
+    </div>

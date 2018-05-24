@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> <%= htmlWebpackPlugin.options.title%> --Mmall电子商务网站</title>
+    <%= require('html-loader!./layout/html-head.html')%>
+</head>
+<body>
+    <%= require('html-loader!./layout/nav.html')%>    
+    <%= require('html-loader!./layout/header.html')%>
+
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-container">
+                <a href="./index.html" class="link">MMALL</a>>
+                <span>></span>
+                <a href="./user-center.html" class="link">个人中心</a>
+                <span>>></span>
+                <a href="./user-center-update.html" class="link">修改个人信息</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-wrap w">
+        <%= require('html-loader!./layout/nav-side.html')%>  
+        <div class="content with-nav">
+            <div class="panel">
+                <h2 class="panel-title link-text">修改信息</h2>
+                <div class="panel-content"></div>
+                <button class="btn btn-submit">提交修改</button>
+            </div>
+        </div>          
+    </div>
+    <%= require('html-loader!./layout/footer-common.html')%> 
+</body>
+</html>

@@ -39,6 +39,67 @@ var _user = {
             error: reject
         })
     },
+    // 找回密码--获取用户密码提示问题
+    getQuestion: function (username,resolve, reject) { console.log(username)
+        _mm.request({  
+            method: 'POST',
+            url: _mm.getServerUrl('/user/forget_get_question.do'),
+            data: {
+                username: username
+            },
+            success: resolve,
+            error: reject
+        })
+    },
+    // 找回密码--验证密码提示答案
+    checkAnswer: function (userInfo,resolve, reject) {
+        _mm.request({
+            method: 'POST',
+            url: _mm.getServerUrl('/user/forget_check_answer.do'),
+            data: userInfo,
+            success: resolve,
+            error: reject
+        })
+    },
+    // 找回密码--重置密码
+    resetPassword: function (userInfo, resolve, reject) {
+        _mm.request({
+            method: 'POST',
+            url: _mm.getServerUrl('/user/forget_reset_password.do'),
+            data: userInfo,
+            success: resolve,
+            error: reject
+        })
+    },
+    // 登录状态下--重置密码
+    resetPasswordOnLogin: function (userInfo, resolve, reject) {
+        _mm.request({
+            method: 'POST',
+            url: _mm.getServerUrl('/user/reset_password.do'),
+            data: userInfo,
+            success: resolve,
+            error: reject
+        })
+    },
+    // 登录状态更新个人信息
+    updateInfo: function (userInfo, resolve, reject) {
+        _mm.request({
+            method: 'POST',
+            url: _mm.getServerUrl('/user/update_information.do'),
+            data: userInfo,
+            success: resolve,
+            error: reject
+        })
+    },
+    // 获取全部用户信息
+    getUserInfo: function (resolve, reject) {
+        _mm.request({
+            method: 'POST',
+            url: _mm.getServerUrl('/user/get_information.do'),
+            success: resolve,
+            error: reject
+        })
+    },    
     // 检查用户名是否可用
     checkUserName: function(username,resolve,reject){
         _mm.request({
