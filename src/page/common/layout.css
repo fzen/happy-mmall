@@ -30,6 +30,11 @@ input[type=checkbox] {
 }
 
 /* 全局通用样式 */
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 /* 隐藏类 */
 .hiden {
     display: none;
@@ -74,8 +79,9 @@ input[type=checkbox] {
     display: block;
     width: 65px;
     height: 65px;
+    margin: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background: url() no-repeat;
+    background: url(../../images/icon/loading.gif) no-repeat;
     opacity: .6;
 }

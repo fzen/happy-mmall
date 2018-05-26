@@ -1,0 +1,79 @@
+ /* 排序按钮 */
+.sort-container {
+    display: inline-block;
+    border: 1px solid #CCCCCC;
+}
+.sort-container .sort-item {
+    position: relative;
+    float: left;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.sort-container .sort-item.active {
+    background-color: #C60023;
+    color: #fff;
+}
+.sort-container .sort-item span {
+    margin-right: 10px;
+}
+.sort-container .sort-item .fa {
+    position: absolute;
+    right: 5px;    
+}
+.sort-item .fa-sort-asc {
+    top: 8px;
+}
+.sort-item .fa-sort-desc {
+    top: 10px;
+}
+.sort-item.active.asc .fa-sort-desc {
+    opacity: .6;
+}
+.sort-item.active.desc .fa-sort-asc {
+    opacity: .6;
+}
+
+/* 商品列表 */
+.list-container {
+    margin-top: 15px;
+    margin-right: -20px;
+}
+.list-container .list-item-container {
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 290px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+/* 商品图片 */
+.list-container .item-img-container {
+    width: 180px;
+    height: 200px;
+    margin: 10px auto 0 auto;
+}
+.list-item-container .list-item-img {
+    display: block;
+    width: 180px;
+    height: 200px;
+}
+/* 商品描述 */
+.list-container .text-container {
+    margin: 10px;
+}
+.list-container .item-price {
+    color: #E7380D;
+    font-size: 16px;
+    font-weight: bold;
+}
+.list-container .item-name, 
+.list-container .item-subtitle {
+    color: #666;
+    transition: all .5s;
+}
+.list-container .item-name:hover, 
+.list-container .item-subtitle:hover{
+    color: #C60023;
+}

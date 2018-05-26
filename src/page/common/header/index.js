@@ -11,7 +11,7 @@ var header = {
     onload: function(){
         var keyword = _mm.getUrlParam('keyword')
         if(keyword){
-            $('#search-input').val('keyword');
+            $('#search-input').val(keyword);
         }
     },
     bindEvent: function (){ 
@@ -30,7 +30,7 @@ var header = {
     searchSubmit: function(){
         var keyword = $('#search-input').val();
         if(keyword){
-            window.location.href = './list.html?'+keyword
+            window.location.href = './list.html?keyword='+keyword
         }else {
             _mm.goHome()
         }
