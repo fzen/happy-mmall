@@ -1,0 +1,48 @@
+<div class="intro-container clearfix">
+    <div class="intro-img-container">
+        <div class="main-img-container">
+            <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}">
+        </div>
+        <ul class="small-img-list">
+            {{#subImages}}
+            <li class="small-img-item">
+                <img class="small-img" src="{{imageHost}}{{.}}" alt="">
+            </li>
+            {{/subImages}}
+        </ul>
+    </div>
+    <div class="intro-info-container">
+        <h1 class="product-name">{{name}}</h1>
+        <p class="product-subtitle">{{subtitle}}</p>
+        <div class="info-item info-price">
+            <span class="label">价格：</span>
+            <span class="price">￥{{price}}</span>
+        </div>
+        <div class="info-item">
+            <span class="label">库存：</span>
+            <span class="stock">{{stock}} 件</span>
+        </div>
+        <div class="info-item">
+            <span class="label">数量：</span>
+            <input type="text" class="count" readonly value="1">
+            <span class="count-add link count-btn">+</span>
+            <span class="count-minus link count-btn">-</span>
+        </div>
+        <div class="info-item">
+            <span href="" class="btn cart-add">加入购物车</span>
+        </div>
+    </div>
+</div>
+
+<div class="moreInfo-container">
+    <div class="tab-container">
+        <ul class="tab-list clearfix">
+            <li class="product-detail">商品详情</li>
+            <li class="product-param">具体参数</li>
+            <li class="product-comment">用户评论</li>
+        </ul>
+    </div>
+    <div class="detail-container">
+        {{{detail}}}
+    </div>
+</div>

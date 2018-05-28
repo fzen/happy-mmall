@@ -14,6 +14,9 @@ $(function(){
     if(type === 'updateInfo'){
         $('.default-success').show().find('.result-title').text('修改个人信息成功！')
     }
+    if(type === 'cart-add'){
+        $('.default-success').show().find('.result-title').text('将商品添加到购物车成功！')
+    }
     $resultTitle = $('.'+type+'-success')
     // 显示对应提示
     $resultTitle.show()
