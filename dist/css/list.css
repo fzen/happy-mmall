@@ -1,0 +1,177 @@
+ /* 排序按钮 */
+.sort-container {
+    display: inline-block;
+    border: 1px solid #CCCCCC;
+}
+.sort-container .sort-item {
+    position: relative;
+    float: left;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.sort-container .sort-item.active {
+    background-color: #C60023;
+    color: #fff;
+}
+.sort-container .sort-item span {
+    margin-right: 10px;
+}
+.sort-container .sort-item .fa {
+    position: absolute;
+    right: 5px;    
+}
+.sort-item .fa-sort-asc {
+    top: 8px;
+}
+.sort-item .fa-sort-desc {
+    top: 10px;
+}
+.sort-item.active.asc .fa-sort-desc {
+    opacity: .6;
+}
+.sort-item.active.desc .fa-sort-asc {
+    opacity: .6;
+}
+
+/* 商品列表 */
+.list-container {
+    margin-top: 15px;
+    margin-right: -20px;
+}
+.list-container .list-item-container {
+    float: left;
+    overflow: hidden;
+    width: 200px;
+    height: 290px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+/* 商品图片 */
+.list-container .item-img-container {
+    width: 180px;
+    height: 200px;
+    margin: 10px auto 0 auto;
+}
+.list-item-container .list-item-img {
+    display: block;
+    width: 180px;
+    height: 200px;
+}
+/* 商品描述 */
+.list-container .text-container {
+    margin: 10px;
+}
+.list-container .item-price {
+    color: #E7380D;
+    font-size: 16px;
+    font-weight: bold;
+}
+.list-container .item-name, 
+.list-container .item-subtitle {
+    color: #666;
+    transition: all .5s;
+}
+.list-container .item-name:hover, 
+.list-container .item-subtitle:hover{
+    color: #C60023;
+}.pg-content{
+    text-align: center;
+    color: #333;
+}
+.pg-content .pg-item{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+    -moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.pg-content .pg-item.disabled{
+    color: #ccc;
+    background: none;
+    cursor: auto;
+}
+.pg-content .pg-item.active{
+    border: 1px solid #f6f6f6;
+    background: none;
+    cursor: auto;
+}
+.pg-content .pg-total{
+    margin-left: 10px;
+    background: none;
+    cursor: auto;
+}.footer {
+    padding-bottom: 10px;
+}
+.footer .links {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link {
+    margin: 0 8px;
+}
+.footer .copyRight {
+    text-align: center;
+    color: #222;
+}.nav {
+    background-color: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user {
+    float: left;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}.header .logo{
+    position: absolute;
+    top: 36px;
+    left: 60px;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+}
+.header .search-container {
+    padding: 40px 0 30px 250px;
+}
+.header .search-container .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #c60023;
+}
+.header .search-container .search-btn {
+    position: absolute;
+    width: 80px;
+    height: 44px;
+}.crumb {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    border-top: 2px solid #c60023;
+    margin-bottom: 15px;
+}

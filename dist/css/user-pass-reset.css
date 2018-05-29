@@ -1,0 +1,99 @@
+.page-wrap {
+    background-color: #e72955;
+    padding: 40px 0;
+}
+.user-container {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+}
+.user-container .user-title {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.user-container .user-box {
+    padding: 20px;
+}
+/* 错误提示 */
+.user-container .error-item {
+    position: relative;
+    padding: 4px 0 4px 40px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    color: red;
+    background-color: #fde9e9;
+    display: none;
+}
+.user-container .error-item .error-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    font-size: 14px;
+    margin-top: -7px;
+}
+
+.user-container .user-box .step-description {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    padding: 5px 0;
+}
+.user-container .user-box .step-container {
+    display: none;
+}
+
+/* 用户输入 */
+.user-container .user-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+.user-container .user-item .user-label {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-right: 1px solid #dbdbdb;
+    font-size: 18px;
+    line-height: 36px;
+    width: 40px;
+    background-color: #f3f3f3;
+    color: #d3d3d3;
+    text-align: center;
+}
+.user-container .user-item input {
+    padding: 10px 10px 10px 50px;
+    height: 20px;
+    width: 298px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+}
+/* 提交按钮 */
+.user-container .btn-submit {
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+/* 注册、登录链接 */
+.user-container .link-item {
+    text-align: right;
+    margin-top: 20px;
+}
+.user-container .link-item .link {
+    margin-left: 10px;
+}.header-simple {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.header-simple .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #c60023;
+}

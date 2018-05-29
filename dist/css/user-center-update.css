@@ -1,0 +1,110 @@
+.content.with-nav {
+    float: left;
+    width: 930px;
+    background-color: #fff;
+    padding: 10px;
+}
+.content .panel h2 {
+    color: #555;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+.content .panel-item {
+    font-size: 14px;    
+    margin: 10px 20px;
+}
+.content .panel-item .label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.content .panel .text {
+    padding: 5px;
+}
+.content .panel .btn-submit {
+    margin: 10px 20px; 
+    padding: 0 5px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}.footer {
+    padding-bottom: 10px;
+}
+.footer .links {
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link {
+    margin: 0 8px;
+}
+.footer .copyRight {
+    text-align: center;
+    color: #222;
+}.nav {
+    background-color: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user {
+    float: left;
+}
+.nav .user .link {
+    margin-right: 5px;
+}
+.nav .user.login {
+    display: none;
+}
+.nav .nav-list {
+    float: right;
+}
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}.header .logo{
+    position: absolute;
+    top: 36px;
+    left: 60px;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+}
+.header .search-container {
+    padding: 40px 0 30px 250px;
+}
+.header .search-container .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #c60023;
+}
+.header .search-container .search-btn {
+    position: absolute;
+    width: 80px;
+    height: 44px;
+}.crumb {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    border-top: 2px solid #c60023;
+    margin-bottom: 15px;
+}.nav-side {
+    float: left;
+    width: 130px;
+}
+.nav-side .nav-item {
+    line-height: 25px;
+}
+.nav-side .nav-item .link {
+    padding-bottom: 2px;
+}
+.nav-side .nav-item.active .link {
+    color: #c60023;
+    font-weight: bold;
+    border-bottom: 1px solid#c20067
+}
