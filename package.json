@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/fzen/happy-mmall/issues"
   },
-  "homepage": "https://github.com/fzen/happy-mmall#readme",
+  "homepage": "https://fzen.github.io/happy-mmall/dist/view/index.html",
   "devDependencies": {
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
